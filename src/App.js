@@ -1,25 +1,21 @@
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import NavComponent from './components/NavComponent';
+import FooterComponent from './components/FooterComponent';
+import WelcomeComponent from './components/WelcomeComponent';
+import AllTheBooks from './components/AllTheBooksComponent'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return(
+    <>
+    <NavComponent/>
+    <WelcomeComponent title="Ciao! Sono un Jumbo" mainText="E molto bello..." buttonText="Cliccami!"/>
+    <div className='row row-col-4 justify-content-center'>
+      <AllTheBooks/>
     </div>
-  );
+    <FooterComponent/>
+    </>
+  )
 }
 
 export default App;
