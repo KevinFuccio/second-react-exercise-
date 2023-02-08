@@ -17,7 +17,7 @@ function App() {
       <AllTheBooks/>
     </div> */}
     <SingleBook book={books[0]}/>
-    <div className='d-flex flex-wrap'>
+    <div>
     <BookList books={books}/>
     </div>
     <FooterComponent/>
